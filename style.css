@@ -1,0 +1,254 @@
+@charset "utf-08";
+
+:root {
+
+    --cor-azul: #0880BD;
+    --cor-laranja: #E55204;
+    --cor-verde: #B2D234;
+}
+* {
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: sans-serif;
+}
+
+
+/* NAVBAR --------------- */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    max-height: 1%;
+    width: 100%;
+    /* padding: 20px 15px; */
+    background-color: rgba(128, 128, 128, 0.473);
+    
+}
+
+.navbar ul{
+    display: flex;
+    margin: 0.5em;
+    padding: 3em 1em;
+}
+
+.navbar a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    transition: all .3s ease-in-out;
+    margin: 10px;
+}
+
+.navbar li:hover{
+    /* box-shadow: 0 0 20px white; */
+    color: #E55204;
+    transform: scale(1.2);
+    /* font-size: 2em; */
+}
+
+
+/* CORPO-------------- */
+
+.container {
+    height: 300vh;
+
+}
+.section {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+/* INICIO */
+
+.inicio {
+    flex-direction: column;
+}
+
+.origem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background: black;
+    border-radius: 2em;
+    box-shadow: 0 0 20px gray;
+}
+
+.logo img{
+    width: 40%;
+}
+
+h1{
+    display: flex;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: sans-serif;
+
+}
+
+.img-origem{
+    width: 50%;
+
+}
+
+.origem p{
+    color: white;
+    margin: 20px;
+}
+
+/* COMO FUNCIONA */
+
+.func, .principais-func {
+    height: 400px;
+    text-align: center;
+    background-color: var(--cor-azul);
+    border-radius: 2em;
+    margin: 30px;
+    padding: 4rem;
+    color: white;
+    box-shadow: 0 0 20px gray;
+
+}
+.func span, .principais-func span {
+    color: var(--cor-verde);
+    font-weight: 700;
+}
+
+.func h2, .principais-func h2 {
+    color: black;
+}
+
+.func img, .principais-func img {
+    height: 150px;
+    width: 300px;
+    border-radius: 35px;
+    padding: 25px;
+}
+
+.func img:hover, .principais-func img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+
+/* PONTOS FORTES */
+
+.conteudos {
+    display: grid;
+    text-align: center;
+    padding: 0.5rem;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.3rem;
+}
+
+.titulo h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+.conteudos i{
+    font-size: 2.5em;
+    transition: all .5s ease-in-out;
+}
+
+.conteudos p{
+    font-size: .5em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.conteudos i:hover{
+    color: #E55204;
+}
+
+
+/* FOOTER--------- */
+
+footer{
+    background-color: black;
+    margin-top: 5em;
+    text-align: center;
+    padding: 2em;
+    box-shadow: 0 0 20px var(--cor-laranja),
+    2px 2px 30px var(--cor-azul);
+    
+}
+
+
+.icon-social{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    
+}
+
+.icon-social a,
+.icon-social i{
+    display: flex;
+    text-indent: 15px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.7em;
+    color: #0880BD;
+    transition: all .5s ease-in-out;
+}
+
+.edu p{
+    font-size: 1.5em;
+    color: var(--cor-laranja);
+    
+}
+
+.alibio p{
+    font-size: 1.5em;
+    color: #0880BD;
+}
+
+.icones {
+    display: flex;
+    margin: 10px;
+    flex-direction: row;
+}
+
+.icon-social i:hover{
+color: #B2D234;
+}
+
+footer p{
+    color: white;
+    font-size: .5em;
+    font-family: sans-serif;
+
+}
+
+.footer-bottom{
+    
+
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: var(--cor-verde);
+
+}
